@@ -52,7 +52,7 @@
 </script>
 
 <div style="height:100%;">
-  <div style="display: flex; justify-content:space-between; padding: 15px;">
+  <div class="scoreBoard">
     <h3>Score: {multParams.score}</h3>
     <Stopwatch score={multParams.score} />
   </div>
@@ -70,5 +70,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  div.scoreBoard {
+    display: flex; 
+    justify-content:space-between; 
+    padding: 15px;
   }
 </style>
