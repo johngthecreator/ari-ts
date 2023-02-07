@@ -22,12 +22,6 @@
       score: 0,
     }
 
-    // let array = [1, 63, 81, 19];
-    // let num1 = 1;
-    // let num2 = 1;
-    // let ans = 0;
-    // let score = 0;
-
     const checkAns = (n: number) => {
       if((n == multParams.answer)&&(n != -3)){
         multParams.score += 10
