@@ -9,8 +9,8 @@
         game:gameName,
         user:"",
         score:points,
-        path:`/{game}`
-    }
+        path:`/${string}`
+  }
 
   const copyLink = async () => {
 

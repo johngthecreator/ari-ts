@@ -8,6 +8,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/multiplication">Multiplication</a></li>
     <li><a href="/addition">Addition</a></li>
+    <li><a href="/subtraction">Subtraction</a></li>
   </ul>
 </details>
 

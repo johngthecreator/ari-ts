@@ -13,7 +13,7 @@
       data-target="modal-example">
     </a>
     <h2>Times Up!</h2>
-    <p>Let's reveiew the round and see how many points you got.</p>
+    <p>Let's review the round and see how many points you got.</p>
     <h3>Total Points: {finalScore}</h3>
     <footer>
         <a id="shareButton" href="/share?game={game}&score={finalScore}">Share Your Score</a>

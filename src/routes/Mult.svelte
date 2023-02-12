@@ -1,5 +1,4 @@
 <script lang="ts">
-    import "@picocss/pico";
     import CardButton from "../lib/CardButton.svelte";
     import Question from "../lib/Question.svelte";
     import Stopwatch from "../lib/Stopwatch.svelte";

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "@picocss/pico";
   import {Router, Route} from "svelte-routing";
   import Nav from "./lib/Nav.svelte";
   import Add from "./routes/Add.svelte";
@@ -6,6 +7,7 @@
   import Mult from "./routes/Mult.svelte";
   import PlayMe from "./routes/PlayMe.svelte";
   import Share from "./routes/Share.svelte";
+    import Sub from "./routes/Sub.svelte";
   export let url = "";
 </script>
   <Router url={url}>
@@ -13,6 +15,7 @@
     <div>
       <Route path="multiplication" component="{Mult}" />
       <Route path="addition" component="{Add}" />
+      <Route path="subtraction" component="{Sub}" />
       <Route path="play" component="{PlayMe}" />
       <Route path="share" component="{Share}" />
       <Route path="/"><Home /></Route>
