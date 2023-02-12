@@ -8,7 +8,7 @@
     import { checkAns } from "../ts_modules/CheckAns";
     import type { eqParams } from "../ts_modules/EqParams";
     
-    let multParams: eqParams = {
+    let addParams: eqParams = {
       ansArray: [1, 63, 81, 19],
       eqNum1: 1,
       eqNum2: 2,
@@ -16,31 +16,31 @@
       score: 0,
     }
 
-    const MultGQ = (n: number, eqObj: eqParams) => {
-      checkAns(n, eqObj) ? multParams.score += 10 : (n != -3) ? multParams.score -= 5 : 
-      multParams.eqNum2 = Math.floor(Math.random()*12)
-      multParams.eqNum1 = Math.floor(Math.random()*12)
-      multParams.answer = multParams.eqNum1*multParams.eqNum2
-      multParams.ansArray[Math.floor(Math.random()*3)] = multParams.answer
+    const AddGQ = (n: number, eqObj: eqParams) => {
+      checkAns(n, eqObj) ? addParams.score += 10 : (n != -3) ? addParams.score -= 5 : 
+      addParams.eqNum2 = Math.floor(Math.random()*100)
+      addParams.eqNum1 = Math.floor(Math.random()*100)
+      addParams.answer = addParams.eqNum1+addParams.eqNum2
+      addParams.ansArray[Math.floor(Math.random()*3)] = addParams.answer
       answer.set(-3)
     }
 
     answer.subscribe((val:number)=>{
         console.log(val)
-        MultGQ(val, multParams)
+        AddGQ(val, addParams)
     })
 
 </script>
 
 <div style="height:100%;">
   <div class="scoreBoard">
-    <h3>Score: {multParams.score}</h3>
-    <Stopwatch game="multiplication" score={multParams.score} />
+    <h3>Score: {addParams.score}</h3>
+    <Stopwatch game="addition" score={addParams.score} />
   </div>
   <main>
-    <StartModal title="Multiplication"/>
-    <Question question={`${multParams.eqNum1} x ${multParams.eqNum2}`} />
-    <CardButton answers={multParams.ansArray}/>
+    <StartModal title="Addition" />
+    <Question question={`${addParams.eqNum1} + ${addParams.eqNum2}`} />
+    <CardButton answers={addParams.ansArray}/>
   </main>
 </div>
 

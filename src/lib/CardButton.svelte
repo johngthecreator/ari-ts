@@ -1,6 +1,6 @@
 <script>
     export let answers;
-    import {answer} from "../answerStore"
+    import {answer} from "../ts_modules/answerStore"
 
     const updateAnswer = (num) => {
         answer.set(num);

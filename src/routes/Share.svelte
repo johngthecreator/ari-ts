@@ -9,7 +9,7 @@
         game:gameName,
         user:"",
         score:points,
-        path:"/mult"
+        path:`/{game}`
     }
 
   const copyLink = async () => {
@@ -28,7 +28,7 @@
 </script>
 <dialog id="shareModal" open>
     <article>
-    <a href="/mult"
+    <a href="/{string}"
     aria-label="Close"
     class="close"
     data-target="modal-example">

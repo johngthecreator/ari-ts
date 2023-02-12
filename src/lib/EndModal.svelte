@@ -1,12 +1,13 @@
 <script>
     export let finalScore;
+    export let game;
     const tryAgain = () =>{
         location.reload()
     }
 </script>
 <dialog id="endModal" open>
   <article>
-    <a href="/"
+    <a href="/{game}"
       aria-label="Close"
       class="close"
       data-target="modal-example">
@@ -15,7 +16,7 @@
     <p>Let's reveiew the round and see how many points you got.</p>
     <h3>Total Points: {finalScore}</h3>
     <footer>
-        <a id="shareButton" href="/share?game=multiplication&score={finalScore}">Share Your Score</a>
+        <a id="shareButton" href="/share?game={game}&score={finalScore}">Share Your Score</a>
         <button on:click={tryAgain}>Try Again</button>
     </footer>
   </article>

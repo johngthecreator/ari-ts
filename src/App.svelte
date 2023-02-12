@@ -1,6 +1,7 @@
 <script lang="ts">
   import {Router, Route} from "svelte-routing";
   import Nav from "./lib/Nav.svelte";
+  import Add from "./routes/Add.svelte";
   import Home from "./routes/Home.svelte";
   import Mult from "./routes/Mult.svelte";
   import PlayMe from "./routes/PlayMe.svelte";
@@ -10,7 +11,8 @@
   <Router url={url}>
     <Nav />
     <div>
-      <Route path="mult" component="{Mult}" />
+      <Route path="multiplication" component="{Mult}" />
+      <Route path="addition" component="{Add}" />
       <Route path="play" component="{PlayMe}" />
       <Route path="share" component="{Share}" />
       <Route path="/"><Home /></Route>

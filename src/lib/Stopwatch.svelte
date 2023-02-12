@@ -1,10 +1,11 @@
 <script>
-    import { timerStart } from "../timeStore";
+    import { timerStart } from "../ts_modules/timeStore";
     import EndModal from "./EndModal.svelte";
     let seconds = 15;
     let tens = 0;
     let end;
     export let score;
+    export let game;
 
     const start = () => {
         if(seconds != 0){
@@ -29,11 +30,8 @@
 
 </script>
 <div>
-    <!-- <button on:click={()=>timer = setInterval(timerStart, 10)}>Start</button>
-    <button on:click={()=>clearInterval(timer)}>Stop</button>
-    <button on:click={timerReset}>Reset</button> -->
     {#if end}
-    <EndModal finalScore={score}/>
+        <EndModal game={game} finalScore={score}/>
     {/if}
     <div id="timerDisplay">
             <h3>{seconds}</h3>
