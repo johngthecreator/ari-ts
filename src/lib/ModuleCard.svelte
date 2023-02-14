@@ -2,6 +2,7 @@
     export let title;
     export let time;
     export let link;
+    export let imgsrc;
 </script>
 <a href="{link}">
     <div class="blitzCard">
@@ -9,6 +10,7 @@
             <h3>{title}</h3>
             <h3>{time}</h3>
         </div>
+        <img src="{imgsrc}" alt="{imgsrc}" />
     </div>
 </a>
 <style>
@@ -23,9 +25,12 @@
         border-radius: 15px;
         margin-right: 40px;
         box-shadow: 0px 10px 15px 0px #888888;
+        display: flex;
+        flex-direction: column;
     }
     .blitzCard h3{
         color: white;
+        margin: 0;
     }
     a {
         text-decoration: none;
