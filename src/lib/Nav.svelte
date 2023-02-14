@@ -6,9 +6,7 @@
   <summary id="nav" aria-haspopup="listbox">Ari.</summary>
   <ul role="listbox">
     <li><a href="/">Home</a></li>
-    <li><a href="/multiplication">Multiplication</a></li>
-    <li><a href="/addition">Addition</a></li>
-    <li><a href="/subtraction">Subtraction</a></li>
+    <li><a href="/modules">Modules</a></li>
   </ul>
 </details>
 

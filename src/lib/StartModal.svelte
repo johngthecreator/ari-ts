@@ -11,7 +11,7 @@
 </script>
 <dialog id="startModal" open>
   <article>
-    <a href="/"
+    <a href="/modules"
       aria-label="Close"
       class="close"
       data-target="modal-example">
