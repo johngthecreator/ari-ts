@@ -28,6 +28,7 @@
         flex-direction: row;
         overflow-y: auto;
         padding-bottom: 30px;
+        padding-left: 15px ;
     }
     div.carousel::-webkit-scrollbar {
         display: none;

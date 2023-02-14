@@ -7,7 +7,7 @@
 </script>
 <dialog id="endModal" open>
   <article>
-    <a href="/{game}"
+    <a href="/modules"
       aria-label="Close"
       class="close"
       data-target="modal-example">
