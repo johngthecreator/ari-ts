@@ -7,12 +7,14 @@
   import Mult from "./routes/Mult.svelte";
   import PlayMe from "./routes/PlayMe.svelte";
   import Share from "./routes/Share.svelte";
-    import Sub from "./routes/Sub.svelte";
+  import Sub from "./routes/Sub.svelte";
+  import Modules from "./routes/Modules.svelte";
   export let url = "";
 </script>
   <Router url={url}>
     <Nav />
     <div>
+      <Route path="modules" component="{Modules}" />
       <Route path="multiplication" component="{Mult}" />
       <Route path="addition" component="{Add}" />
       <Route path="subtraction" component="{Sub}" />
