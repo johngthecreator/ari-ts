@@ -3,7 +3,10 @@
 </script>
 
 <details role="list">
-  <summary id="nav" aria-haspopup="listbox">Ari.</summary>
+  <summary id="nav" aria-haspopup="listbox">
+    Ari.
+    <img src="./menu.webp" alt="menu icon"/>
+</summary>
   <ul role="listbox">
     <li><a href="/">Home</a></li>
     <li><a href="/modules">Modules</a></li>
@@ -17,6 +20,7 @@
     background-color: #9381FF;
     color: white;
     display: flex;
+    justify-content: space-between ;
     align-items: center;
     border: 0;
     border-radius: 0px;
@@ -30,6 +34,9 @@
     box-shadow: 0 !important;
     outline: none !important;
     margin: 0;
+  }
+  summary img {
+    height: 20px;
   }
 
 </style>
