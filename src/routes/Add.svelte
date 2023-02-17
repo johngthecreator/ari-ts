@@ -19,7 +19,7 @@
       checkAns(n, eqObj) ? addParams.score += 10 : (n != -3) ? addParams.score -= 5 : 
       addParams.eqNum2 = Math.floor(Math.random()*100)
       addParams.eqNum1 = Math.floor(Math.random()*15)
-      addParams.answer = addParams.eqNum2+addParams.eqNum1
+      addParams.answer = addParams.eqNum1+addParams.eqNum2
       addParams.ansArray[Math.floor(Math.random()*3)] = addParams.answer
       answer.set(-3)
     }
@@ -38,7 +38,7 @@
   </div>
   <main>
     <StartModal title="Addition" />
-    <Question question={`${addParams.eqNum1} + ${addParams.eqNum2}`} />
+    <Question question={`${addParams.eqNum2} + ${addParams.eqNum1}`} />
     <CardButton answers={addParams.ansArray}/>
   </main>
 </div>
