@@ -1,10 +1,11 @@
 <script>
+    import { timerStart } from "../ts_modules/timeStore";
     export let title;
-    export let message;
 
 
     const closeModal = () => {
         document.getElementById("startModal").removeAttribute('open');
+        timerStart.set(true)
     }
 
 </script>
@@ -16,7 +17,7 @@
       data-target="modal-example">
     </a>
     <h3>{title}</h3>
-    <p>{message}</p>
+    <p>Answer as many questions as you can in 15 seconds!</p>
     <footer>
       <button on:click={closeModal}>Start</button>
     </footer>

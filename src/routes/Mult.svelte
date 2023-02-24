@@ -2,7 +2,7 @@
     import CardButton from "../lib/CardButton.svelte";
     import Question from "../lib/Question.svelte";
     import Stopwatch from "../lib/Stopwatch.svelte";
-    import StartModal from "../lib/StartModal.svelte";
+    import BlitzModal from "../lib/BlitzModal.svelte";
     import { answer } from "../ts_modules/answerStore"
     import { checkAns } from "../ts_modules/CheckAns";
     import type { eqParams } from "../ts_modules/EqParams";
@@ -37,8 +37,8 @@
     <Stopwatch game="multiplication" score={multParams.score} />
   </div>
   <main>
-    <StartModal title="Multiplication"/>
-    <Question question={`${multParams.eqNum1} x ${multParams.eqNum2}`} />
+    <BlitzModal title="Multiplication"/>
+    <Question question={`${multParams.eqNum1} x ${multParams.eqNum2}`} instruct="Solve this equation"/>
     <CardButton answers={multParams.ansArray}/>
   </main>
 </div>

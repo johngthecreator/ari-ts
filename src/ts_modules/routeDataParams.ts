@@ -1,6 +1,6 @@
 export interface routeDataParams {
     title: string;
-    time: number;
+    time?: number;
     link: string;
     imgsrc: string;
 }

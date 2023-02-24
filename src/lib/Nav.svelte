@@ -5,7 +5,7 @@
 <details role="list">
   <summary id="nav" aria-haspopup="listbox">
     Ari.
-    <img src="./menu.webp" alt="menu icon"/>
+    <img src="menu.webp" alt="menu icon"/>
 </summary>
   <ul role="listbox">
     <li><a href="/">Home</a></li>

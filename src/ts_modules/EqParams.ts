@@ -3,5 +3,5 @@ export interface eqParams {
     eqNum1: number,
     eqNum2: number,
     answer: number,
-    score: number
+    score?: number
   }
