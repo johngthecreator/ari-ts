@@ -7,7 +7,7 @@
 
 </script>
 <div class="lifeHud">
-    <h3>{question}/10</h3>
+    <h3>{question}/5</h3>
     <div style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
         <img src="./life.png" alt="heart"/>
         <h3>{lifeCounter}</h3>
@@ -17,7 +17,7 @@
     <FinishModal title="Oh no you died!" message="You lost all your life points before you could answer all the questions. Better luck next time!"/>
 {/if}
 
-{#if question >= 10}
+{#if question > 5}
     <FinishModal title="Good Job!" message="You were able to answer all the questions correctly without losing all your life points."/>
 {/if}
 
